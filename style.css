@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock&family=Roboto&display=swap');
+
+:root{
+  --cream: #fafaf1;
+  --navy: #122443;
+  --red: #FF6132;
+  --teal: #07a8ab;
+}
 
 * {
   box-sizing: border-box;
@@ -6,6 +14,16 @@
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: var(--cream);
+  color: var(--navy);
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Overlock", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+a{
+  color: var(--teal);
 }
 
 header{
@@ -24,12 +42,17 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--cream) url("images/tiles.jpg") repeat;
+  border-top: 20px solid var(--red);
+  border-bottom: 20px solid var(--red);
 }
 
 .innerContainer{
   width: 80%;
   max-width: 1200px;
   padding: 20px;
+  background-color: var(--cream);
+  margin: 30px;
 }
 
 .cardBox{
@@ -38,6 +61,8 @@ header{
 }
 .card{
   padding: 20px;
+  background-color: var(--cream);
+  margin: 30px 0;
 }
 
 footer{
