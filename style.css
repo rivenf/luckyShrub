@@ -7,3 +7,41 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+
+header{
+  height: 200px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo{
+  display: flex;
+  align-items: baseline;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerContainer{
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.cardBox{
+  width: 80%;
+  max-width: 1200px;
+}
+.card{
+  padding: 20px;
+}
+
+footer{
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
