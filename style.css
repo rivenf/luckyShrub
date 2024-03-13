@@ -119,6 +119,11 @@ footer{
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 20px;
+}
+.socialIcon{
+  height: 30px;
+  margin: 5px;
 }
 
 @media screen and (min-width: 600px){
@@ -155,6 +160,10 @@ footer{
   }
   .wideInput{
     grid-column: span 2;
+  }
+
+  footer{
+    font-size: 0.75em;
   }
 }
 
