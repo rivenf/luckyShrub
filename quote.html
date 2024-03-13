@@ -26,89 +26,104 @@
         <div class="innerContainer">
             <h1>Get a quote</h1>
             <p>Tell us about your landscaping needs and we will contact you with more information.</p>
+            <p>Items labeled with <span class="required" aria-label="required">*</span> are required.</p>
             <form autocomplete="on">
-                <label for="firstName">First name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-
-                <label for="lastName">Last name:</label>
-                <input type="text" id="lastName" name="lastName" required>
-
-                <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" required>
-
-                <label for="address2">Address line 2:</label>
-                <input type="text" id="address2" name="address2">
-
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city" required>
-
-                <label for="state">State:</label>
-                <select id="state" name="state" required>
-                    <option value="alabama">Alabama</option>
-                    <option value="alaska">Alaska</option>
-                    <option value="arizona">Arizona</option>
-                    <option value="arkansas">Arkansas</option>
-                    <option value="california">California</option>
-                    <option value="colorado">Colorado</option>
-                    <option value="connecticut">Connecticut</option>
-                    <option value="delaware">Delaware</option>
-                    <option value="florida">Florida</option>
-                    <option value="georgia">Georgia</option>
-                    <option value="hawaii">Hawaii</option>
-                    <option value="idaho">Idaho</option>
-                    <option value="illinois">Illinois</option>
-                    <option value="indiana">Indiana</option>
-                    <option value="iowa">Iowa</option>
-                    <option value="kansas">Kansas</option>
-                    <option value="kentucky">Kentucky</option>
-                    <option value="louisiana">Louisiana</option>
-                    <option value="maine">Maine</option>
-                    <option value="maryland">Maryland</option>
-                    <option value="massachusetts">Massachusetts</option>
-                    <option value="michigan">Michigan</option>
-                    <option value="minnesota">Minnesota</option>
-                    <option value="mississippi">Mississippi</option>
-                    <option value="missouri">Missouri</option>
-                    <option value="montana">Montana</option>
-                    <option value="nebraska">Nebraska</option>
-                    <option value="nevada">Nevada</option>
-                    <option value="newHampshire">New Hampshire</option>
-                    <option value="newJersey">New Jersey</option>
-                    <option value="newMexico">New Mexico</option>
-                    <option value="newYork">New York</option>
-                    <option value="northCarolina">North Carolina</option>
-                    <option value="northDakota">North Dakota</option>
-                    <option value="ohio">Ohio</option>
-                    <option value="oklahoma">Oklahoma</option>
-                    <option value="oregon">Oregon</option>
-                    <option value="pennsylvania">Pennsylvania</option>
-                    <option value="rhodeIsland">Rhode Island</option>
-                    <option value="southCarolina">South Carolina</option>
-                    <option value="southDakota">South Dakota</option>
-                    <option value="tennessee">Tennessee</option>
-                    <option value="texas">Texas</option>
-                    <option value="utah">Utah</option>
-                    <option value="vermont">Vermont</option>
-                    <option value="virginia">Virginia</option>
-                    <option value="washington">Washington</option>
-                    <option value="westVirginia">West Virginia</option>
-                    <option value="wisconsin">Wisconsin</option>
-                    <option value="wyoming">Wyoming</option>
-                </select>
-
-                <label for="zip">Zip code:</label>
-                <input type="number" id="zip" name="zip" required>
-
-                <label for="description">Tell us about your project:</label>
-                <textarea id="description" name="description" required></textarea>
-
-                <input type="submit" id="submit">
+            <div class="formList">
+                <div>
+                    <label for="firstName">First name: <span class="required" aria-label="required">*</span></label><br />
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div>
+                    <label for="lastName">Last name: <span class="required" aria-label="required">*</span></label><br />
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div>
+                    <label for="phone">Phone number: <span class="required" aria-label="required">*</span></label><br />
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+                <div>
+                    <label for="email">Email: <span class="required" aria-label="required">*</span></label><br />
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="wideInput">
+                    <label for="address">Address: <span class="required" aria-label="required">*</span></label><br />
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="wideInput">
+                    <label for="address2">Address line 2:</label><br />
+                    <input type="text" id="address2" name="address2">
+                </div>
+                <div>
+                    <label for="city">City: <span class="required" aria-label="required">*</span></label><br />
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="smInput">
+                    <div>
+                        <label for="state">State: <span class="required" aria-label="required">*</span></label><br />
+                        <select id="state" name="state" required>
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="delaware">Delaware</option>
+                            <option value="florida">Florida</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="idaho">Idaho</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="iowa">Iowa</option>
+                            <option value="kansas">Kansas</option>
+                            <option value="kentucky">Kentucky</option>
+                            <option value="louisiana">Louisiana</option>
+                            <option value="maine">Maine</option>
+                            <option value="maryland">Maryland</option>
+                            <option value="massachusetts">Massachusetts</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="minnesota">Minnesota</option>
+                            <option value="mississippi">Mississippi</option>
+                            <option value="missouri">Missouri</option>
+                            <option value="montana">Montana</option>
+                            <option value="nebraska">Nebraska</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="newHampshire">New Hampshire</option>
+                            <option value="newJersey">New Jersey</option>
+                            <option value="newMexico">New Mexico</option>
+                            <option value="newYork">New York</option>
+                            <option value="northCarolina">North Carolina</option>
+                            <option value="northDakota">North Dakota</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="pennsylvania">Pennsylvania</option>
+                            <option value="rhodeIsland">Rhode Island</option>
+                            <option value="southCarolina">South Carolina</option>
+                            <option value="southDakota">South Dakota</option>
+                            <option value="tennessee">Tennessee</option>
+                            <option value="texas">Texas</option>
+                            <option value="utah">Utah</option>
+                            <option value="vermont">Vermont</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="washington">Washington</option>
+                            <option value="westVirginia">West Virginia</option>
+                            <option value="wisconsin">Wisconsin</option>
+                            <option value="wyoming">Wyoming</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="zip">Zip code: <span class="required" aria-label="required">*</span></label><br />
+                        <input type="number" id="zip" name="zip" required>
+                    </div>
+                </div>
+                <div class="wideInput">
+                    <label for="description">Tell us about your project: <span class="required" aria-label="required">*</span></label><br />
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
             </form>
         </div>
     </div>
