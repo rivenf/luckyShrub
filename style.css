@@ -50,6 +50,7 @@ header{
   font-size: 3em;
 }
 
+/* Navigation */
 .nav{
   display: flex;
   align-items: center;
@@ -157,6 +158,24 @@ footer{
 }
 
 @media screen and (min-width: 600px){
+  /* Navigation */
+  .active{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-bottom: 10px;
+  }
+  .navDropdown a{
+    display: inline-block;
+    border-top: 0;
+    border-right: 1px solid var(--red);
+    padding: 0 15px;
+  }
+  .navDropdown a:last-child{
+    border-right: 0;
+    padding-right: 0;
+  }
+
   /* Index page styling */
   .cardBox{
     display: flex;
@@ -195,6 +214,17 @@ footer{
 }
 
 @media screen and (min-width: 1000px){
+  /* Navigation */
+  .nav{
+    display: none;
+  }
+  .navDropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-bottom: 10px;
+  }
+
   /* About page styling */
   .g1{
     grid-area: 1 / 2 / 2 / 3;
