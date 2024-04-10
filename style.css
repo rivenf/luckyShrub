@@ -38,7 +38,6 @@ button:hover, button:active{
 }
 
 header{
-  height: 200px;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
@@ -46,6 +45,40 @@ header{
 .logo{
   display: flex;
   align-items: baseline;
+}
+.logo h1{
+  font-size: 3em;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.navDropdown{
+  display: none;
+  background-color: var(--cream);
+  text-align: right;
+}
+.active{
+  display: block;
+}
+.navDropdown a{
+  display: block;
+  font-size: 1.25em;
+  text-decoration: none;
+  color: var(--navy);
+  padding: 8px 0;
+  border-top: 1px solid var(--red);
+}
+.navDropdown a:hover, .navDropdown a:active{
+  color: var(--teal);
+}
+.nav button{
+  margin: 10px;
+}
+#menuIcon{
+  cursor: pointer;
 }
 
 .container{
