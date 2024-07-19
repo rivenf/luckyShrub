@@ -45,10 +45,15 @@ header{
 }
 .logo{
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 .logo h1{
-  font-size: 3em;
+  font-size: 2em;
+  margin: 10px;
+}
+.logoImg{
+  height: 100px;
+  margin: 10px;
 }
 
 /* Navigation */
@@ -166,7 +171,12 @@ footer{
   margin: 5px;
 }
 
+/* Responsive styling for tablets and larger */
 @media screen and (min-width: 600px){
+  .logo h1{
+    font-size: 3em;
+  }
+
   /* Navigation */
   .active{
     display: flex;
@@ -222,6 +232,7 @@ footer{
   }
 }
 
+/* Responsive styling for laptops and larger */
 @media screen and (min-width: 1000px){
   /* Navigation */
   .nav{
