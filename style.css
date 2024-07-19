@@ -167,8 +167,9 @@ footer{
   padding-top: 20px;
 }
 .socialIcon{
-  height: 30px;
   margin: 5px;
+  color: var(--navy);
+  font-size: 2.5em;
 }
 
 /* Responsive styling for tablets and larger */
@@ -229,6 +230,9 @@ footer{
 
   footer{
     font-size: 0.75em;
+  }
+  .socialIcon{
+    font-size: 3em;
   }
 }
 
